@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<text>hello Dear Zard</text>
+<button size="mini">按钮</button>
