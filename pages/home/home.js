@@ -1,66 +1,72 @@
-// pages/home/home.js
+// const app = getApp()
+// const name = app.globalData.name;
+// const age = app.globalData.age;
+
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-
+        name: "Zard1996",
+        age: 18,
+        students: [{
+                id: 100,
+                name: 'Jams',
+                age: 18
+            },
+            {
+                id: 101,
+                name: 'Zard',
+                age: 18
+            },
+            {
+                id: 102,
+                name: 'Boke',
+                age: 18
+            }
+        ],
+        count: 0,
+        list:[]
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    // 双向数据绑定
+    countjia() {
+        this.setData({
+            count: this.data.count += 1
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
+    // 双向数据绑定
+    countjian() {
+        this.setData({
+            count: this.data.count -= 1
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
+    // 获取用户信息
+    handleGetUserInfo(event) {
+        console.log(event)
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
+    // 生命周期函数
+    onLoad() {
+        // 请求数据
+        wx.request({
+            url: 'http://123.207.32.32:8000/api/hy/recommend',
+            success: (res) => {
+                const data = res.data.data.list
+                this.setData({
+                    list:data
+                })
+            }
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
+    onReady() {
+        console.log('onReady')
     },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
+    onShow() {
+        console.log('onShow')
     },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
+    onHide() {
+        console.log('onHide')
     },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
+    onUnload() {
+        console.log('onUnload')
+    },
+    onPageScroll(obj){
+        console.log(obj)
     }
 })

@@ -1,6 +1,45 @@
 {
     "pages": [
         "pages/home/home",
-        "pages/about/about"
-    ]
+        "pages/about/about",
+        "pages/profile/profile",
+        "pages/category/category"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ff5777",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "selectedColor": "#ff5777",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "home",
+                "iconPath": "assets/tabbar/Home1.png",
+                "selectedIconPath": "assets/tabbar/Home2.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "about",
+                "iconPath": "assets/tabbar/Category1.png",
+                "selectedIconPath": "assets/tabbar/Category2.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "category",
+                "iconPath": "assets/tabbar/Cart1.png",
+                "selectedIconPath": "assets/tabbar/Cart2.png"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "profile",
+                "iconPath": "assets/tabbar/Mine1.png",
+                "selectedIconPath": "assets/tabbar/Mine2.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap80.json"
 }
