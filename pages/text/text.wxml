@@ -1,0 +1,16 @@
+<!--pages/text/text.wxml-->
+
+<!-- 1.行内标签，不会换行，文本不能选中 -->
+<text>hello world\n</text>
+<text>你好，小程序\n</text>
+
+<!-- 2.selectable:true 文本可选中 -->
+<text selectable="{{true}}">hello zard\n</text>
+<text selectable>hello zard\n</text>
+
+<!-- 3.空格大小 space:ensp emsp-->
+<text selectable space="ensp">hello zard\n</text>
+<text selectable space="emsp">hello zard\n</text>
+
+<!-- 4.是否解码文本-->
+<text decode>5&gt;3</text>

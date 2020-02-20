@@ -1,0 +1,16 @@
+<!--pages/button/button.wxml-->
+<!-- 1.type 绿色和警告-->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 2.plain 镂空效果-->
+<button size="mini" plain>按钮</button>
+
+<!-- 3.disable 不可用-->
+<button size="mini" disabled>按钮</button>
+
+<!-- 4.loading 多个小圆圈转-->
+<button size="mini" loading>按钮</button>
+
+<!-- 4.hover-class按下去背景变色-->
+<button hover-class="pressed">按钮</button>
