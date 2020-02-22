@@ -1,0 +1,7 @@
+<!-- 1. hover-class 点击的时候样式 -->
+<view class='box1' hover-class='hover-view'>box1</view>
+
+<!-- 2.阻止冒泡 -->
+<view class='box2' hover-class='hover-view2'>
+<view class='box1' hover-class='hover-view' hover-stop-propagation>box1</view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/image/image.wxml-->
+
+<!-- 可单标签 默认有自己的大小 -->
+
+<!-- 1.相对路径 2绝对路径  3远程图片-->
+<image src="../../assets/Zard.jpg" />
+<image src="/assets/Zard.jpg" />
+<image src="https://5b0988e595225.cdn.sohucs.com/images/20190822/71d96edfbd934e718b817d141bf4b144.jpeg" />
+
+<!-- 2.选择图片手动添加 -->
+<button bindtap="handle">
+    选中图片
+</button>
+<image src="{{imagePath}}" />
+
+<!-- 3.监听图片加载完成，图片懒加载 -->
+<image bindload="handleImageLoad" lazy-load wx:for="{{1}}" wx:key="id" src="https://5b0988e595225.cdn.sohucs.com/images/20190822/71d96edfbd934e718b817d141bf4b144.jpeg" />
+
+<!-- 4.用户识别图片：收藏 发送 -->
+<image show-menu-by-longpress src="https://5b0988e595225.cdn.sohucs.com/images/20190822/71d96edfbd934e718b817d141bf4b144.jpeg" />
+
+<!-- 5.图片比例 -->
+<image mode="widthFix" src="/assets/Zard.jpg" />
+              

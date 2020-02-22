@@ -1,5 +1,1 @@
 <!--pages/home/home.wxml-->
-<text>hello Dear Zard</text>
-<button size="mini">按钮</button>
-
-<view>新代码2</view>

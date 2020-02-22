@@ -1,0 +1,16 @@
+<!--pages/input/input.wxml-->
+
+<!-- 1.默认值 -->
+<input value="Zard" /> 
+
+<!-- 2.决定键盘 -->
+<input type="number" />
+
+<!-- 3.密码 -->
+<input password />
+
+<!-- 4.占位 -->
+<input placeholder="请输入内容" />
+
+<!-- 5.焦点 -->
+<input bindinput="bindinput" bindfocus="bindfocusH" bindblur="bindblurS" />
