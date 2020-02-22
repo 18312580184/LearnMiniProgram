@@ -1,0 +1,12 @@
+<!-- 1.时间 -->
+<view>{{nowTime}}</view>
+
+<!-- 2.单机按钮切换颜色 -->
+<button size="mini" bindtap="switchColor">切换颜色</button>
+<view class="box {{isActive ? 'active':''}}">Zard1996</view>
+
+<import src="/pages/template/template.wxml" />
+
+<template is="contentitem" data="{{btn:'按钮1',viw:'viw1'}}" />
+<template is="contentitem" data="{{btn:'按钮2',viw:'viw2'}}" />
+<template is="contentitem" data="{{btn:'按钮3',viw:'viw3'}}" />

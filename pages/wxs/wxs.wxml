@@ -1,0 +1,18 @@
+<wxs module="info">
+    var message = "hello wxs"
+    var name = "Zard1996"
+
+    var sum = function(sum1, sum2) {
+        return sum1 + sum2
+    }
+
+    module.exports = {
+        message: message,
+        name: name,
+        sum: sum
+    }
+</wxs>
+
+<view>
+    {{info.message}} {{info.name}} {{info.sum(20,30)}}
+</view>

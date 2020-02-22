@@ -1,0 +1,4 @@
+<template name="contentitem">
+    <button size="mini">{{btn}}</button>
+    <view>{{viw}}</view>
+</template>
