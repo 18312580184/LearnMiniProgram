@@ -1,0 +1,17 @@
+<view class="view1" bind:touchstart="touchstart" bind:touchmove="touchmove" bind:touchend="touchend" bind:tap="tap" bind:longpress="longpress">
+    常见事件类型
+</view>
+
+<!-- 获取对象，点击获取键值 -->
+<view class="content">
+    <block wx:for="{{shop}}" wx:key="index">
+        <view class="init" bindtap="bindtapClick" data-index="{{index}}" data-item="{{item}}">{{item}}</view>
+    </block>
+</view>
+
+<!-- 事件冒泡和捕获 执行顺序是：捕获->冒泡 如果在其中一个阻止了就会在执行顺序执行到阻止的那一个就停止 -->
+<view class="v1" capture-bind:tap="bu1" bindtap="mao1">bu1-mao1
+    <view class="v2" capture-catch:tap="bu2" bindtap="mao2">bu2-mao2
+        <view class="v3" capture-bind:tap="bu3" bindtap="mao3">bu3-mao3</view>
+    </view>
+</view>

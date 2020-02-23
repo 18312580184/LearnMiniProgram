@@ -1,0 +1,34 @@
+/* pages/bind/bind.wxss */
+
+.view1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.content {
+    display: flex;
+}
+
+.init {
+    flex: 1;
+    text-align: center;
+}
+
+.v1 {
+    width: 600rpx;
+    height: 600rpx;
+    background: red;
+}
+
+.v2 {
+    width: 400rpx;
+    height: 400rpx;
+    background: yellow;
+}
+
+.v3 {
+    width: 200rpx;
+    height: 200rpx;
+    background: blue;
+}
