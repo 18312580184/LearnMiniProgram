@@ -1,3 +1,12 @@
-<!--pages/home/home.wxml-->
-<text>hello Dear Zard</text>
-<button size="mini">按钮</button>
+<mycpn />
+<mystyle />
+<myprop content="内容1" classtitle="red" classcontent="con" />
+<myprop title="标题2" classtitle="blue" classcontent="con2" />
+
+<view>当前计数:{{counter}}</view>
+<myevent bind:increment="handleIncrement" />
+
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" bind:itemclick="handletabClick" />
+
+<my-sel  class="sel-class" />
+<button size="mini" bind:tap="handleIncrementCpn">home的按钮修改组件内的counter</button>

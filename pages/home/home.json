@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "w-tab-control": "/components/w-tab-control/w-tab-control",
+        "myevent": "/components/myevent/myevent",
+        "myprop": "/components/myprop/myprop",
+        "mystyle": "/components/mystyle/mystyle",
+        "mycpn": "/components/mycpn/mycpn",
+        "my-sel": "/components/my-sel/my-sel"
+    }
 }

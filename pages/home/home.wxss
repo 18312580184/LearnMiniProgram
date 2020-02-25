@@ -1,1 +1,15 @@
-/* pages/home/home.wxss */
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.con {
+    background: blue;
+}
+
+.con2 {
+    background: red;
+}
