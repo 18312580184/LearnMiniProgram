@@ -1,3 +1,9 @@
 <!--pages/home/home.wxml-->
-<text>hello Dear Zard</text>
-<button size="mini">按钮</button>
+
+<!-- 1.页面跳转 -->
+<navigator url="/pages/detail/detail">跳到详情页</navigator>
+
+<!-- 2.open-type ，跳转方式，关闭首页，打开详情页-->
+<navigator url="/pages/detail/detail" open-type="redirect">跳到详情页</navigator>
+
+<!-- 3. -->
